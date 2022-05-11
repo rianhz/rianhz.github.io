@@ -1,0 +1,162 @@
+body {
+  background-color: #0b1317;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+p.title {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+h5 {
+  border-bottom: 2px solid orange;
+}
+
+/* HERO */
+.hello {
+  font-size: 13px;
+}
+
+.rh {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+a.btn-cv {
+  font-size: 13px;
+  padding: 5px;
+  text-decoration: none;
+  color: orange;
+  border: 2px solid orange;
+  text-transform: uppercase;
+  transition: 0.8s ease;
+  border-radius: 10px;
+}
+
+a.btn-cv:hover {
+  box-shadow: 0 0 10px 0 orange;
+}
+
+.profile {
+  border-radius: 50px 50px 0 0;
+  padding-top: 30px;
+  width: 280px;
+  height: 340px;
+  background-color: #111d23;
+}
+
+.me {
+  width: 230px;
+}
+
+/* ABOUT */
+
+.person {
+  width: 250px;
+}
+
+.exp {
+  width: 250px;
+}
+
+.hob {
+  width: 250px;
+}
+
+/* PROJECT */
+.card img {
+  width: 100%;
+  height: 180px;
+}
+
+.card .card-text {
+  padding: 5px 0;
+}
+
+.tombol-crd {
+  padding: 7px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  border: 2px solid orange;
+  transition: 0.8s ease;
+}
+
+.tombol-crd:hover {
+  background-color: orange;
+  color: white;
+}
+
+/* CONTACT */
+.formk {
+  padding-bottom: 50px;
+}
+
+.formk input {
+  width: 100%;
+  margin: 5px 0;
+}
+
+.formk textarea {
+  width: 100%;
+  height: 250px;
+  margin: 5px 0;
+}
+
+.formk button {
+  width: 30%;
+  font-size: 20px;
+  border-radius: 10px;
+  background: transparent;
+  border: 2px solid orange;
+  color: white;
+  cursor: pointer;
+  margin: 10px auto;
+  display: block;
+  padding: 10px;
+  transition: 0.5s ease;
+}
+
+.formk button:hover {
+  box-shadow: 0 0 10px 0 orange;
+}
+
+.social-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+p.soc-par {
+  font-size: 15px;
+}
+
+p.soc-par span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.social-item i {
+  font-size: 20px;
+  margin: 0 3px;
+}
+
+.social-item a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  transition: 0.7s ease;
+}
+
+.social-item a:hover {
+  color: orange;
+}
+
+/* FOOTER */
+footer {
+  height: 20vh;
+  background-color: #111d23;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
