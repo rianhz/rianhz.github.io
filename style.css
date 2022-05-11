@@ -1,7 +1,7 @@
 body {
   background-color: #0b1317;
   color: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 p.title {
@@ -11,6 +11,12 @@ p.title {
 
 h5 {
   border-bottom: 2px solid orange;
+}
+
+/* NAV */
+.navbar-brand {
+  font-size: 35px;
+  font-family: 'Passions Conflict', cursive;
 }
 
 /* HERO */
@@ -48,6 +54,7 @@ a.btn-cv:hover {
 }
 
 .me {
+  margin: 0 auto;
   width: 230px;
 }
 
