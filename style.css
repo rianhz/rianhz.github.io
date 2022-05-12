@@ -9,6 +9,11 @@ p.title {
   font-weight: 900;
 }
 
+h4 {
+  font-size: 40px;
+  border-bottom: 2px solid orange;
+}
+
 h5 {
   border-bottom: 2px solid orange;
 }
@@ -22,6 +27,7 @@ h5 {
 .navbar-nav li a {
   border-top: 2px solid #111d23;
   margin: 0 10px;
+  font-weight: 900;
 }
 
 .navbar-nav > li > a.active,
@@ -115,7 +121,7 @@ a.btn-cv:hover {
 
 /* CONTACT */
 .formk {
-  padding-bottom: 50px;
+  padding: 0 20px 50px 20px;
 }
 
 .formk input {
