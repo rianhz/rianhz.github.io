@@ -19,6 +19,20 @@ h5 {
   font-family: 'Passions Conflict', cursive;
 }
 
+.navbar-nav li a {
+  border-top: 2px solid #111d23;
+  margin: 0 10px;
+}
+
+.navbar-nav > li > a.active,
+.navbar-nav > li > a.active:focus {
+  border-top: 2px solid orange;
+}
+
+.navbar-nav li a:hover {
+  border-top: 2px solid orange;
+}
+
 /* HERO */
 .hello {
   font-size: 15px;
@@ -155,6 +169,7 @@ p.soc-par span {
 
 .social-item a {
   text-decoration: none;
+  margin: 4px;
   color: white;
   font-size: 20px;
   transition: 0.6s ease;
@@ -171,4 +186,10 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  div.row.freak {
+    flex-direction: column-reverse;
+  }
 }
