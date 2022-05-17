@@ -125,19 +125,10 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-4 p-4">
-            <div class="card bg-dark" style="width: 17rem" data-aos="flip-left">
-              <img src="assets/project_assets/1.webp" class="card-img-top" alt="face-recog" />
-              <div class="card-body">
-                <h5 class="card-title">Face Recognition</h5>
-                <p class="card-text">Colaboration Haar Cascade and Local Binary Patern Higtogram Method</p>
-                <a href="https://github.com/rianhz/face-recognition-using-haar-cascade-and-local-binary-patern-histogram" class="tombol-crd">Github</a>
-              </div>
-            </div>
-          </div>
+          
           <div class="col-lg-4 p-4">
             <div class="card bg-dark" style="width: 17rem" data-aos="flip-left" data-aos-delay="150">
-              <img src="assets/project_assets/port.png" class="card-img-top" alt="personal-porto" />
+              <img src="assets/project_assets/portfgf.jpg" class="card-img-top" alt="personal-porto" />
               <div class="card-body">
                 <h5 class="card-title">Portfolio Website</h5>
                 <p class="card-text">Create website using HTML, CSS, Javascript and Bootstrap5</p>
@@ -147,11 +138,21 @@
           </div>
           <div class="col-lg-4 p-4">
             <div class="card bg-dark" style="width: 17rem" data-aos="flip-left" data-aos-delay="300">
-              <img src="assets/project_assets/hh.png" class="card-img-top" alt="incoming" />
+              <img src="assets/project_assets/finance-accounting-paper-desk-using.jpg" class="card-img-top" alt="incoming" />
               <div class="card-body">
-                <h5 class="card-title">Project 3</h5>
-                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, harum..</p>
-                <a href="https://github.com/rianhz" class="tombol-crd">Github</a>
+                <h5 class="card-title">Calculator</h5>
+                <p class="card-text">Create calculator on website using HTML, CSS and Javascript</p>
+                <a href="https://github.com/rianhz/learn-javascript-calculator-project" class="tombol-crd">Github</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 p-4">
+            <div class="card bg-dark" style="width: 17rem" data-aos="flip-left">
+              <img src="assets/project_assets/1.webp" class="card-img-top" alt="face-recog" />
+              <div class="card-body">
+                <h5 class="card-title">Face Recognition</h5>
+                <p class="card-text">Colaboration Haar Cascade and Local Binary Patern Higtogram Method</p>
+                <a href="https://github.com/rianhz/face-recognition-using-haar-cascade-and-local-binary-patern-histogram" class="tombol-crd">Github</a>
               </div>
             </div>
           </div>
@@ -225,31 +226,6 @@
     </script>
 
     <!-- AMBIL DATA CONTACT FORM JS -->
-    <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbypkKr8gGhKygmyHmR3i135joz8VQzvDR3BtRYd3cFKpgSKEN_1fsmcUJJbZRd42JfE/exec';
-      const form = document.forms['contact-port'];
-      const btnKirim = document.querySelector('.btn-kirim');
-      const btnLoading = document.querySelector('.btn-loading');
-      const alrtSuccess = document.querySelector('.alert');
-
-      form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        // btn-kirim none, btn-loading tampil
-        btnLoading.classList.toggle('d-none');
-        btnKirim.classList.toggle('d-none');
-        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-          .then((response) => {
-            // btn-loading none, btn-kirim tampil
-            btnLoading.classList.toggle('d-none');
-            btnKirim.classList.toggle('d-none');
-
-            // alert dan finish
-            alrtSuccess.classList.toggle('d-none');
-            form.reset();
-            console.log('Success!', response);
-          })
-          .catch((error) => console.error('Error!', error.message));
-      });
-    </script>
+    <script src="form.js"></script>
   </body>
 </html>
