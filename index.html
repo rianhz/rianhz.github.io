@@ -22,6 +22,7 @@
 
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
   </head>
   <body>
     <!-- NAV -->
@@ -61,7 +62,7 @@
               <span class="rh" style="font-size: 35px">Rian Hidayat</span> <br />
               Fresh Graduate of Institut Teknologi dan Bisnis Asia Malang
             </p>
-            <a href="assets/cv_certificate/rianhidayat_cv.pdf" class="btn-cv" download>Download CV</a>
+            <a href="assets/cv_certificate/RianHidayat.pdf" class="btn-cv" download>Download CV</a>
           </div>
           <div class="col-md-6 pt-5">
             <div class="profile text-center">
@@ -127,7 +128,7 @@
         <div class="row">
           
           <div class="col-lg-4 p-4">
-            <div class="card bg-dark" style="width: 17rem" data-aos="flip-left" data-aos-delay="150">
+            <div class="card bg-dark" style="width: 17rem" data-aos="flip-left" >
               <img src="assets/project_assets/portfgf.jpg" class="card-img-top" alt="personal-porto" />
               <div class="card-body">
                 <h5 class="card-title">Portfolio Website</h5>
@@ -137,7 +138,7 @@
             </div>
           </div>
           <div class="col-lg-4 p-4">
-            <div class="card bg-dark" style="width: 17rem" data-aos="flip-left" data-aos-delay="300">
+            <div class="card bg-dark" style="width: 17rem" data-aos="flip-left" data-aos-delay="150">
               <img src="assets/project_assets/finance-accounting-paper-desk-using.jpg" class="card-img-top" alt="incoming" />
               <div class="card-body">
                 <h5 class="card-title">Calculator</h5>
@@ -147,7 +148,7 @@
             </div>
           </div>
           <div class="col-lg-4 p-4">
-            <div class="card bg-dark" style="width: 17rem" data-aos="flip-left">
+            <div class="card bg-dark" style="width: 17rem" data-aos="flip-left"  data-aos-delay="300">
               <img src="assets/project_assets/1.webp" class="card-img-top" alt="face-recog" />
               <div class="card-body">
                 <h5 class="card-title">Face Recognition</h5>
@@ -177,10 +178,10 @@
               <strong>Success!</strong> your message has been received
               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
-            <form class="formk" name="contact-port">
-              <input type="text" name="nama" id="nama" placeholder="Your name" required /><br />
-              <input type="email" name="email" id="email" placeholder="Your email" required /><br />
-              <textarea name="pesan" id="pesan" placeholder="Type here..." required></textarea><br />
+            <form class="form-contact" name="contact-port">
+              <input type="text" name="nama" class="nama" placeholder="Your name"  /><br />
+              <input type="email" name="email" class="email" placeholder="Your email"  /><br />
+              <textarea name="pesan" class="pesan" placeholder="Type here..." ></textarea><br />
               <button class="btn-kirim" type="submit">Send</button>
               <button class="btn btn-loading d-none" style="background-color: transparent" type="button" disabled>
                 <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
@@ -227,5 +228,9 @@
 
     <!-- AMBIL DATA CONTACT FORM JS -->
     <script src="form.js"></script>
+
+
+
+    
   </body>
 </html>
