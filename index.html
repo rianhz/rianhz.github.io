@@ -23,6 +23,19 @@
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
+     <!-- AMBIL DATA CONTACT FORM JS -->
+     <script src="form.js"></script>
+
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init('4uJousGLtO1DsESx7');
+        })();
+    </script>
+
+
   </head>
   <body>
     <!-- NAV -->
@@ -178,16 +191,16 @@
               <strong>Success!</strong> your message has been received
               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
-            <form class="form-contact" name="contact-port">
-              <input type="text" name="nama" class="nama" placeholder="Your name"  /><br />
-              <input type="email" name="email" class="email" placeholder="Your email"  /><br />
-              <textarea name="pesan" class="pesan" placeholder="Type here..." ></textarea><br />
-              <button class="btn-kirim" type="submit">Send</button>
+            <div class="form-contact">
+              <input type="text" id="nama" placeholder="Your name" required />
+              <input type="email" id="email" placeholder="Your email" required />
+              <textarea  id="pesan" placeholder="Type here..."  required></textarea>
+              <button onclick="SendMail()" class="btn-kirim" type="submit">Send</button>
               <button class="btn btn-loading d-none" style="background-color: transparent" type="button" disabled>
                 <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                 Loading...
               </button>
-            </form>
+            </div>
           </div>
           <div class="col-md-6 p-3">
             <p class="soc-par">
@@ -226,8 +239,7 @@
       AOS.init();
     </script>
 
-    <!-- AMBIL DATA CONTACT FORM JS -->
-    <script src="form.js"></script>
+   
 
 
 
