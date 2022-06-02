@@ -23,18 +23,6 @@
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-     <!-- AMBIL DATA CONTACT FORM JS -->
-     <script src="form.js"></script>
-
-
-
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            emailjs.init('4uJousGLtO1DsESx7');
-        })();
-    </script>
-
 
   </head>
   <body>
@@ -187,20 +175,12 @@
         </div>
         <div class="row">
           <div class="col-md-6 text-center p-3">
-            <div class="alert alert-success alert-dismissible fade show d-none" role="alert">
-              <strong>Success!</strong> your message has been received
-              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
-            <div class="form-contact">
-              <input type="text" id="nama" placeholder="Your name" required />
-              <input type="email" id="email" placeholder="Your email" required />
-              <textarea  id="pesan" placeholder="Type here..."  required></textarea>
-              <button onclick="SendMail()" class="btn-kirim" type="submit">Send</button>
-              <button class="btn btn-loading d-none" style="background-color: transparent" type="button" disabled>
-                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                Loading...
-              </button>
-            </div>
+            <form id="myform" class="form-contact" >
+              <input type="text" id="nama" placeholder="Your name"  />
+              <input type="email" id="email" placeholder="Your email"  />
+              <textarea  id="pesan" placeholder="Type here..."  ></textarea>
+              <button class="btn-kirim" type="submit">Send</button>
+            </form>
           </div>
           <div class="col-md-6 p-3">
             <p class="soc-par">
@@ -239,9 +219,19 @@
       AOS.init();
     </script>
 
-   
+    <!-- AMBIL DATA CONTACT FORM JS -->
+    <script src="form.js"></script>
 
+    <!-- EMAILJS SCRIPT -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init('4uJousGLtO1DsESx7');
+        })();
+    </script>
 
+    <!-- SWEET ALERT -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     
   </body>
