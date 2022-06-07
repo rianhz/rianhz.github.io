@@ -9,6 +9,10 @@ p.title {
   font-weight: 900;
 }
 
+h2 {
+  color: orange;
+}
+
 h4 {
   font-size: 40px;
   border-bottom: 2px solid orange;
@@ -90,7 +94,55 @@ a.btn-cv:hover {
 }
 
 .hob {
-  width: 250px;
+  width: 350px;
+}
+
+.wrapper {
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  gap: 70px;
+  flex-wrap: wrap;
+}
+
+.list-fave i {
+  font-size: 60px;
+}
+
+.list-fave p {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.social-info {
+  display: flex;
+  justify-content: space-around;
+}
+
+p.soc-par {
+  font-size: 15px;
+}
+
+p.soc-par span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.social-item i {
+  font-size: 20px;
+  margin: 0 3px;
+}
+
+.social-item a {
+  text-decoration: none;
+  margin: 4px;
+  color: white;
+  font-size: 20px;
+  transition: 0.6s ease;
+}
+
+.social-item a:hover {
+  color: orange;
 }
 
 /* PROJECT */
@@ -129,16 +181,17 @@ a.btn-cv:hover {
   padding: 7px;
   border: 2px solid rgb(128, 128, 128);
   outline: none;
-  width: 100%;
-  margin: 5px 0;
+  width: 50%;
+  margin: 8px 0;
 }
 
 .form-contact textarea {
   padding: 7px;
+  outline: none;
   border: 2px solid rgb(128, 128, 128);
-  width: 100%;
+  width: 50%;
   height: 250px;
-  margin: 5px 0;
+  margin: 8px 0;
 }
 
 .form-contact button {
@@ -157,38 +210,6 @@ a.btn-cv:hover {
 
 .form-contact button:hover {
   box-shadow: 0 0 10px 0 orange;
-}
-
-.social-info {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-p.soc-par {
-  font-size: 15px;
-}
-
-p.soc-par span {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.social-item i {
-  font-size: 20px;
-  margin: 0 3px;
-}
-
-.social-item a {
-  text-decoration: none;
-  margin: 4px;
-  color: white;
-  font-size: 20px;
-  transition: 0.6s ease;
-}
-
-.social-item a:hover {
-  color: orange;
 }
 
 /* FOOTER */
